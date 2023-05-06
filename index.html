@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Anasayfa</title>
     <style>
-        h3{
+        h3 {
             color: crimson;
         }
-        
+
+        body {
+            background-color: #E9ECEF;
+        }
+
+        .card {
+            background-color: #E9ECEF;
+        }
     </style>
 </head>
+
 <body>
     <center>
-<!-- navigasyon işlemleri -->
-        <div style="list-style-position: inside;">
-         <h1 style="color:red;">MÜZİK DÜKKANIM</h1>
-            <p>
-                <a href="index.html"><u>Anasayfa</u></a>&emsp;
-                <a href="product.html"><u>Ürünlerimiz</u></a>&emsp;
-                <a href="about.html"><u>Hakkımızda</u></a>
-            </p>
-            <h2 style="color: darkslateblue;">Anasayfa</h2>
+        <!-- navigasyon işlemleri -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand text-danger" href="index.html">Muzik Dukkanim</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="index.html">Anasayfa <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="product.html">urunlerimiz</a>
+                    <a class="nav-link" href="about.html">hakkimizda</a>
+                </div>
+            </div>
+        </nav>
+        <!-- anasayfa -->
+        <article>
+            <div class="card">
+                <div class="card-body">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4 text-danger">Merhaba!</h1>
+                            <p>
+                                Müzik Dükkanım sitemize hoşgeldiniz! Bu sitede çeşitli müzik aletlerini bulabilirsiniz.
+                                Uygun fiyatlarımız ve kaliteli ürünlerimiz için
+                                <a href="product.html"><u>Ürünlerimiz</u></a> sayfasini ziyaret edebilirsiniz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </div>
+
+            <h3>Sitemizde bulunan müzik aletleri</h3>
+            <ul style="display: inline-block;">
+                <li>Gitar</li>
+                <li>Davul</li>
+                <li>Piyano</li>
+                <li>Keman</li>
+            </ul>
 
 
-<!-- anasayfa -->
-<div>
-    <p>
-        Müzik Dükkanım sitemize hoşgeldiniz! Bu sitede çeşitli müzik aletlerini bulabilirsiniz. Uygun fiyatlarımız ve kaliteli ürünlerimiz için
-        <a href="product.html"><u>Ürünlerimiz</u></a> sayfasını ziyaret edebilirsiniz.
-    </p>
+            <div>
+                <a href="about.html">
+                    <button type="button" class="btn btn-primary">About us</button>
+                </a>
 
-    <h3>Sitemizde bulunan müzik aletleri</h3>
-    <ul style="display: inline-block;">
-        <li>Gitar</li>
-        <li>Davul</li>
-        <li>Piyano</li>
-        <li>Keman</li>
-    </ul>
-
-
-</div>
-
-
-
-    
+            </div>
+        </article>
     </center>
 </body>
+
 </html>
